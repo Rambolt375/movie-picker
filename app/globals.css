@@ -24,3 +24,32 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* 1. Set the width of the scrollbar */
+::-webkit-scrollbar {
+  width: 8px;               /* Vertical bar width */
+  height: 8px;              /* Horizontal bar height */
+}
+
+/* 2. Make the Track (background) completely transparent */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+/* 3. Style the Thumb (the moving part) */
+::-webkit-scrollbar-thumb {
+  /* Using an RGBA color for transparency (Zinc-600 at 40% opacity) */
+  background-color: rgba(82, 82, 91, 0.4); 
+  border-radius: 20px;       /* Makes it a rounded pill shape */
+  border: 2px solid transparent; /* Creates padding around the thumb */
+  background-clip: content-box;  /* Ensures the border stays transparent */
+}
+
+/* 4. Make it slightly brighter when the user hovers over it */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(113, 113, 122, 0.7);
+}
+
+html {
+  scroll-behavior: smooth;
+}

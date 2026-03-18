@@ -22,7 +22,7 @@ export default function SearchBar() {
         placeholder="Search movies..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        className="px-4 py-1 rounded bg-gray-800 text-white border border-gray-700"
+        className="px-4 py-1 rounded bg-gray-800 text-white border border-gray-700 w-5/6 focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
       <button type="submit" className="bg-blue-600 px-4 py-1 rounded">
         Search

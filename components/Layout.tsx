@@ -4,7 +4,7 @@ import SearchBar from "./SearchBar";
 export default function Navbar() {
     return (
         <nav className="flex items-center justify-between p-6 bg-slate-900 text-white sticky top-0 z-50">
-            <div className="text-xl font-bold"><Link href="/">CineTrack 🎬</Link></div>
+            <div className="text-xl font-bold"><Link href="/">CineWavePick 🎬</Link></div>
             <SearchBar />
             <div className="space-x-6">
                 <Link href="/" className="hover:text-blue-400">Home</Link>

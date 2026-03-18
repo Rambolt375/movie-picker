@@ -26,14 +26,14 @@ export default async function SearchPage({
             <h1>Results for: {query}</h1>
             <div className="grid grid-cols-4 gap-4">
                 {data.results?.map((movie: any) => (
-                    <Link key={movie.id} href={`/movie/${movie.id}`} className="hover:scale-105 transition-transform">
-                        <Card 
-                            id={movie.id} 
-                            title={movie.title || "Untitled"} 
-                            imageUrl={movie.poster_path 
-                                ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` 
+                    <Link key={movie.id} href={`/movie/${movie.id}/details`} className="hover:scale-105 transition-transform">
+                        <Card
+                            id={movie.id}
+                            title={movie.title || "Untitled"}
+                            imageUrl={movie.poster_path
+                                ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
                                 : "https://via.placeholder.com/500x750?text=No+Image"
-                            } 
+                            }
                         />
                     </Link>
                 ))}
